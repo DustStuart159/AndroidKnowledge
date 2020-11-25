@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_margin="16dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/ic_video_speed_down"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:id="@+id/button_speed_down"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/button_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Raw"
+            android:layout_marginHorizontal="8dp"/>
+
+        <Button
+            android:id="@+id/button_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Local"
+            android:layout_marginHorizontal="8dp"/>
+
+        <Button
+            android:id="@+id/button_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="URL"
+            android:layout_marginHorizontal="8dp"/>
+
+        <Button
+            android:background="@drawable/ic_video_speed_up"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:id="@+id/button_speed_up"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
